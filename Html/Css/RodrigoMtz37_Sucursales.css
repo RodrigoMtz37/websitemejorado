@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: #d82626;
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-area: header;
+}
+
+#titulo {
+    text-align: center;
+    background-color: #d82626;
+    width: 100%;
+    grid-area: sucursales;
+}
+
+#linares {
+    text-align: center;
+    background-color: #d82626;
+    width: 100%;
+    grid-area: linares;
+}
+
+#huala {
+    text-align: center;
+    background-color: #d82626;
+    width: 100%;
+    grid-area: huala;
+}
+
+#imagen {
+    text-align: center;
+    background-color: #d82626;
+    width: 100%;
+    grid-area: imagen;
+}
+
+nav img {
+    width: 500px;
+}
+
+footer {
+    text-align: center;
+    background-color: #d82626;
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-area: footer;
+}
+
+footer a {
+    color: black;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                         "sucursales sucursales"
+                         "linares huala"
+                         "imagen imagen"
+                         "footer footer";
+    gap: 2em;
+}
+
+body {
+    background-color: rgba(165, 112, 42, 0.829);
+}

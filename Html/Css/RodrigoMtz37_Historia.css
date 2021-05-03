@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: #d82626;
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-area: header;
+}
+
+#historia {
+    background-color: rgba(255, 27, 27, 0.699);
+    padding: 1em;
+    grid-area: historia;
+}
+
+#origen {
+    background-color: rgba(255, 27, 27, 0.699);
+    padding: 1em;
+    grid-area: origen;
+}
+
+#glorias {
+    background-color: rgba(255, 27, 27, 0.699);
+    padding: 1em;
+    grid-area: glorias;
+}
+
+#proceso {
+    background-color: rgba(255, 27, 27, 0.699);
+    padding: 1em;
+    grid-area: proceso;
+}
+
+#reportaje {
+    background-color: rgba(255, 27, 27, 0.699);
+    padding: 1em;
+    text-align: center;
+    grid-area: reportaje;
+}
+
+footer {
+    background-color: rgba(255, 27, 27, 0.699);
+    padding: 1em;
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-area: footer;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                         "historia origen"
+                         "glorias proceso"
+                         "reportaje reportaje"
+                         "footer footer";
+    gap: 2em;
+}
+
+body {
+    background-color: rgba(165, 112, 42, 0.829);
+}
+
+#link {
+    color: black;
+}
+
+#tituloR {
+    padding: 1em;
+}

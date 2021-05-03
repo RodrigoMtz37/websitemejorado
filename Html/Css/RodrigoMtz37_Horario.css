@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: #d82626;
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-area: header;
+}
+
+#tabla {
+    background-color: rgba(255, 27, 27, 0.699);
+    text-align: left;
+    padding: 1em;
+    grid-area: tabla;
+}
+
+#tablaT {
+    background-color: black;
+    color: wheat;
+}
+
+#emote {
+    background-color: rgba(255, 27, 27, 0.699);
+    text-align: center;
+    padding: 1em;
+    grid-area: emote;
+}
+
+footer {
+    background-color: rgba(255, 27, 27, 0.699);
+    padding: 1em;
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-area: footer;
+}
+
+footer a {
+    color: black;
+}
+
+#imagen {
+    text-align: center;
+    padding: 1em;
+    grid-area: imagen;
+}
+
+nav img {
+    width: 100%;
+}
+
+body {
+    background-color: rgba(165, 112, 42, 0.829);
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                         "tabla emote"
+                         "footer footer"
+                         "imagen imagen";
+    gap: 1em;
+}

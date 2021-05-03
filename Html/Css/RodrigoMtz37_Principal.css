@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+header a {
+    display: block;
+}
+
+header ul, h1, h2 {
+    list-style: none;
+    text-align: center;
+}
+
+header nav a:link, header a:visited {
+    color: black;
+    background-color: #d82626;
+
+}
+
+header nav a:hover, header a:active {
+    color: #d82626;
+    background-color: black;
+    outline: 1px solid black;
+
+}
+
+header > nav > ul > li {
+    float: left;
+    width: 25%;
+}
+
+#titulo {
+    background-color: #d82626;
+    padding: 5px;
+    margin: 0em;
+}
+
+.clearflix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+header > nav > ul {
+    padding: 0em;
+    margin: 0em;
+}
